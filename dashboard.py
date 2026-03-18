@@ -53,7 +53,7 @@ def login_screen():
 
         if st.button("Sisteme Giriş Yap", use_container_width=True):
             # Basit doğrulama (Burayı veritabanına da bağlayabilirsin)
-            if username == "admin" and password == "123456":
+            if username == st.secrets["auth"]["username"] and password == st.secrets["auth"]["password"]:
                 st.session_state.logged_in = True
                 st.success("Giriş Başarılı! Yönlendiriliyorsunuz...")
                 st.rerun()  # Sayfayı yenileyip ana panele geçirir
