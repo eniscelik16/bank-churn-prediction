@@ -1,3 +1,4 @@
+streamlit
 fastapi
 uvicorn
 pandas
@@ -5,3 +6,6 @@ numpy
 scikit-learn
 pydantic
 joblib
+shap
+plotly
+requests
